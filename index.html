@@ -3,11 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Robot Battledrome Deathmatch Extreme</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 
 <article id="game-container">
-  
+  <section id="player_one-setup" class="setup card--chassisOne">
+    <h2>Player One, Build Your Bot</h2>
+    <div class="select-chassis"></div>
+  </section>  
+
+  <section id="player_one-weapon" class="setup">
+    <h2>Player One, Pick Your Weapon</h2>
+    <div class="select-weapon"></div>
+  </section>
+
+  <section id="player_one-mods" class="setup">
+    <h2>Player One, Pick a Mod</h2>
+    <div class="select-mod"></div>
+  </section>
+
+  <section id="player_two-setup" class="setup card--chassisTwo">
+    <h2>Player Two, Pick Your Bot</h2>
+    <div class="select-chassis"></div>
+  </section>
+
+  <section id="player_two-weapon" class="setup">
+    <h2>Player Two, Pick your Weapon</h2>
+    <div class="select-weapon"></div>
+  </section>
+
+  <section id="player_two-mods" class="setup">
+    <h2> Player Two, Pick a Mod</h2>
+    <div class="select-mod"></div>
+  </section>
+
+  <section id="battleground">
+  </section>
 
 
 
@@ -25,5 +58,6 @@
 <script src="javascripts/robotmasters.js"></script>
 <script src="javascripts/factory.js"></script>
 <script src="javascripts/quiz.js"></script>
+<script src="javascripts/createRobot.js"></script>
 </body>
 </html>

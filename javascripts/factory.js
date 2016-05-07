@@ -14,14 +14,19 @@ var Robot = (function(robotMaster) {
 //** 6 Types of Chassis (base + variants) **//
 
   robotMaster.Factory.Drone = function() {
+    this.type = "Drone"
     this.hpBonus = 10;
     this.armorBonus = 5;
     this.strengthBonus = 15;
     this.agilityBonus = 30;
-  };
+
+    };
   robotMaster.Factory.Drone.prototype = new robotMaster.Factory.Chassis();
+
+
   
   robotMaster.Factory.Drone.Light = function() {
+    this.subType = "Light"
     this.hpBonus = 5;
     this.armorBonus = 0;
     this.strengthBonus = 0;
@@ -30,6 +35,7 @@ var Robot = (function(robotMaster) {
   robotMaster.Factory.Drone.Light.prototype = new robotMaster.Factory.Drone();
 
   robotMaster.Factory.Drone.Heavy = function() {
+    this.subType = "Heavy"
     this.hpBonus = 20;
     this.armorBonus = 0;
     this.strengthBonus = 5;
@@ -38,6 +44,7 @@ var Robot = (function(robotMaster) {
   robotMaster.Factory.Drone.Heavy.prototype = new robotMaster.Factory.Drone();
 
   robotMaster.Factory.Bipedal = function() {
+    this.type = "Bipedal"
     this.hpBonus = 10;
     this.armorBonus = 5;
     this.strengthBonus = 15;
@@ -46,6 +53,7 @@ var Robot = (function(robotMaster) {
   robotMaster.Factory.Bipedal.prototype = new robotMaster.Factory.Chassis();
 
   robotMaster.Factory.Bipedal.Light = function() {
+    this.subType = "Light"
     this.hpBonus = 5;
     this.armorBonus = 5;
     this.strengthBonus = 5;
@@ -54,6 +62,7 @@ var Robot = (function(robotMaster) {
   robotMaster.Factory.Bipedal.Light.prototype = new robotMaster.Factory.Chassis();
 
   robotMaster.Factory.Bipedal.Heavy = function() {
+    this.subType = "Heavy"
     this.hpBonus = 15;
     this.armorBonus = 10;
     this.strengthBonus = 5;
@@ -62,6 +71,7 @@ var Robot = (function(robotMaster) {
   robotMaster.Factory.Bipedal.Heavy.prototype = new robotMaster.Factory.Chassis();
 
   robotMaster.Factory.ATV = function() {
+    this.type = "ATV"
     this.hpBonus = 10;
     this.armorBonus = 5;
     this.strengthBonus = 15;
@@ -70,6 +80,7 @@ var Robot = (function(robotMaster) {
   robotMaster.Factory.ATV.prototype = new robotMaster.Factory.Chassis();
 
   robotMaster.Factory.ATV.Light = function() {
+    this.subType = "Light"
     this.hpBonus = 0;
     this.armorBonus = 0;
     this.strengthBonus = 5;
@@ -78,6 +89,7 @@ var Robot = (function(robotMaster) {
   robotMaster.Factory.ATV.Light.prototype = new robotMaster.Factory.Chassis();
 
   robotMaster.Factory.ATV.Heavy = function() {
+    this.subType = "Heavy"
     this.hpBonus = 10;
     this.armorBonus = 10;
     this.strengthBonus = 10;
