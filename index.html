@@ -9,6 +9,7 @@
 <body>
 
 <article id="game-container">
+<div id="player_setup">
   <section id="player_one-setup" class="setup card--chassisOne">
     <h6>Player One, Build Your Bot</h6>
     <div class="select-chassis"></div>
@@ -27,6 +28,10 @@
   <section id="player_one-mods" class="setup">
     <h6>Player One, Pick a Mod</h6>
     <div class="select-mod"></div>
+  </section>
+
+  <section id="readyP1" class="endofcreation">
+    <div><a href="#" class="btn"> Ready? </a> </div>
   </section>
 
   <section id="player_two-setup" class="setup card--chassisTwo">
@@ -49,11 +54,13 @@
     <div class="select-mod"></div>
   </section>
   
-  <section id="ready" class="endofcreation">
+  <section id="readyP2" class="endofcreation">
     <div><a href="#" class="btn"> Ready? </a> </div>
-
+  </section>
+  </div> <!-- end player_setup div -->
 
   <section id="battleground">
+    <div id="textOutput"></div>
   </section>
 
 

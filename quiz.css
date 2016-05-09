@@ -1,3 +1,7 @@
 .setup {
   /*display: none;*/
 }
+
+#battleground {
+  display: none;
+}

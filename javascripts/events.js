@@ -42,10 +42,30 @@ var Robot =(function(robotMaster){
 return robotMaster;
 })(Robot || {})
 
-$('#ready').on('click', Robot.buildP1())
-// var readyP1 = document.getElementById('ready');
+// $('#ready').on('click', Robot.buildP1())
+var readyP1 = document.getElementById('readyP1');
+var readyP2 = document.getElementById('readyP2');
 
-// function anotherfunction(){console.log('hi')}
-// readyP1.addEventListener('click', Robot.buildP1, anotherfunction)
+
+readyP1.addEventListener('click', Robot.buildP1);
+readyP1.addEventListener('click', function() {
+  P1.health += P1.chassis.healthBonus;
+  P1.strength += P1.chassis.strengthBonus;
+  P1.agility += P1.chassis.agilityBonus;
+  P1.armor += P1.chassis.armorBonus;
+});
+
+readyP2.addEventListener('click', Robot.buildP2);
+readyP1.addEventListener('click', function() {
+  P2.health += P2.chassis.healthBonus;
+  P2.strength += P2.chassis.strengthBonus;
+  P2.agility += P2.chassis.agilityBonus;
+  P2.armor += P2.chassis.armorBonus;
+});
+
+readyP2.addEventListener('click', function() {
+  $('#player_setup').hide();
+  $('#battleground').show();
+});
 
 
