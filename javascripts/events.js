@@ -56,7 +56,7 @@ readyP1.addEventListener('click', function() {
 });
 
 readyP2.addEventListener('click', Robot.buildP2);
-readyP1.addEventListener('click', function() {
+readyP2.addEventListener('click', function() {
   P2.health += P2.chassis.healthBonus;
   P2.strength += P2.chassis.strengthBonus;
   P2.agility += P2.chassis.agilityBonus;
@@ -66,6 +66,11 @@ readyP1.addEventListener('click', function() {
 readyP2.addEventListener('click', function() {
   $('#player_setup').hide();
   $('#battleground').show();
+
 });
 
+//test delete this
+var showBG = function() {
+  $('#battleground').show();
+}
 

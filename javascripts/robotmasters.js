@@ -38,7 +38,6 @@ var Robot = (function(robotMaster) {
     this.armor = 10;
   };
 
-
   robotMaster.Bosses.P2.prototype.setChassis = function(chassisSelect) {
     this.chassis = chassisSelect;
   };
@@ -48,6 +47,9 @@ var Robot = (function(robotMaster) {
   robotMaster.Bosses.P2.prototype.setMod = function(modSelect) {
     this.mod = modSelect
   };
+
+
+
 
   return robotMaster;
 })(Robot || {});

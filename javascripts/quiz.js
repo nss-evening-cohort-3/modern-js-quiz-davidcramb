@@ -3,24 +3,24 @@ $(document).ready(function(){
 let getChassis = () => {
   for (let i = 0; i < Object.keys(Robot.Factory.Chassis).length; i++) {
     let chassisType = Object.keys(Robot.Factory.Chassis)[i];
-    $('.select-chassis').append(`<span id=${chassisType}${i} class="${chassisType}"><a href="#" class="btn">${chassisType}</a></span>`);
+    $('.select-chassis').append(`<span id=${chassisType}${i} class="${chassisType}"><a href="#" class="btn btn-primary">${chassisType}</a></span>`);
   }
 };
 
 let getSubtypes = () => {
-  $('.select-chassisSubtype').append(`<span id="Light"><a href="#" class="btn">Light</a></span`)
+  $('.select-chassisSubtype').append(`<span id="Light"><a href="#" class="btn btn-info">Light</a></span`)
   $('.select-chassisSubtype').append(`<span id="Heavy"><a href="#" class="btn">Heavy</a></span`)
 }
 
 let getWeapons = () => {
   Object.keys(Robot.Weapon).forEach(function(weapon) {
-    $('.select-weapon').append(`<span class=${weapon}><a href="#" class="btn">${weapon}</a></span>`);
+    $('.select-weapon').append(`<span class=${weapon}><a href="#" class="btn btn-danger">${weapon}</a></span>`);
   });
 };
 
 let getMods = () => {
   Object.keys(Robot.Mods).forEach(function(mod) {
-    $('.select-mod').append(`<span class=${mod}><a href="#" class="btn">${mod}</a></span>`);
+    $('.select-mod').append(`<span class=${mod}><a href="#" class="btn btn-success">${mod}</a></span>`);
 
   })
 };
